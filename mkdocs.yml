@@ -1,1 +1,42 @@
-site_name: My Docs
+site_name: IFB104 Workshop
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+    accent: deep purple
+  icon:
+    logo: octicons/code-review-16
+  features:
+    - content.code.select
+    - content.code.copy
+    - navigation.sections
+    - navigation.path
+    - toc.integrate   
+    - navigation.top
+    - search.highlight
+    - navigation.tracking
+    - navigation.indexes 
+    - toc.follow
+    - toc.collapse
+    - collapse_navigation
+    - content.tabs.link
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
